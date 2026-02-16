@@ -68,7 +68,7 @@ class MerchantCategoryMerchantSearchQueryExpanderPlugin extends AbstractPlugin i
     }
 
     /**
-     * @param array<string> $categoryKeys
+     * @param list<string> $categoryKeys
      *
      * @return \Elastica\Query\Terms
      */
