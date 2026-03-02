@@ -11,10 +11,5 @@ use Generated\Shared\Transfer\MerchantSearchCollectionTransfer;
 
 interface MerchantCategorySearchExpanderInterface
 {
-    /**
-     * @param \Generated\Shared\Transfer\MerchantSearchCollectionTransfer $merchantSearchCollectionTransfer
-     *
-     * @return \Generated\Shared\Transfer\MerchantSearchCollectionTransfer
-     */
     public function expand(MerchantSearchCollectionTransfer $merchantSearchCollectionTransfer): MerchantSearchCollectionTransfer;
 }

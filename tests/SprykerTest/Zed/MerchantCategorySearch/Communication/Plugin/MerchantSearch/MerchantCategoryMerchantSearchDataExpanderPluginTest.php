@@ -43,9 +43,6 @@ class MerchantCategoryMerchantSearchDataExpanderPluginTest extends Unit
      */
     protected $tester;
 
-    /**
-     * @return void
-     */
     public function testExpandSuccess(): void
     {
         // Arrange

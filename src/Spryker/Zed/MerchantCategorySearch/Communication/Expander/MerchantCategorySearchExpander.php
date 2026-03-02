@@ -23,19 +23,11 @@ class MerchantCategorySearchExpander implements MerchantCategorySearchExpanderIn
      */
     protected $merchantCategoryFacade;
 
-    /**
-     * @param \Spryker\Zed\MerchantCategorySearch\Dependency\Facade\MerchantCategorySearchToMerchantCategoryFacadeInterface $merchantCategoryFacade
-     */
     public function __construct(MerchantCategorySearchToMerchantCategoryFacadeInterface $merchantCategoryFacade)
     {
         $this->merchantCategoryFacade = $merchantCategoryFacade;
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\MerchantSearchCollectionTransfer $merchantSearchCollectionTransfer
-     *
-     * @return \Generated\Shared\Transfer\MerchantSearchCollectionTransfer
-     */
     public function expand(MerchantSearchCollectionTransfer $merchantSearchCollectionTransfer): MerchantSearchCollectionTransfer
     {
         $merchantCategoryResponseTransfer = $this->merchantCategoryFacade->get(

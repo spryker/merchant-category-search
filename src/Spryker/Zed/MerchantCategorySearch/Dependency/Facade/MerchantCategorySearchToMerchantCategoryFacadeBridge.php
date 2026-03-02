@@ -25,11 +25,6 @@ class MerchantCategorySearchToMerchantCategoryFacadeBridge implements MerchantCa
         $this->merchantCategoryFacade = $merchantCategoryFacade;
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\MerchantCategoryCriteriaTransfer $merchantCategoryCriteriaTransfer
-     *
-     * @return \Generated\Shared\Transfer\MerchantCategoryResponseTransfer
-     */
     public function get(MerchantCategoryCriteriaTransfer $merchantCategoryCriteriaTransfer): MerchantCategoryResponseTransfer
     {
         return $this->merchantCategoryFacade->get($merchantCategoryCriteriaTransfer);

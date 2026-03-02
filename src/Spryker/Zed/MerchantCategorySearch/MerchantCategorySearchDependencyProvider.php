@@ -21,11 +21,6 @@ class MerchantCategorySearchDependencyProvider extends AbstractBundleDependencyP
      */
     public const FACADE_MERCHANT_CATEGORY = 'FACADE_MERCHANT_CATEGORY';
 
-    /**
-     * @param \Spryker\Zed\Kernel\Container $container
-     *
-     * @return \Spryker\Zed\Kernel\Container
-     */
     public function provideCommunicationLayerDependencies(Container $container): Container
     {
         $container = parent::provideCommunicationLayerDependencies($container);
@@ -35,11 +30,6 @@ class MerchantCategorySearchDependencyProvider extends AbstractBundleDependencyP
         return $container;
     }
 
-    /**
-     * @param \Spryker\Zed\Kernel\Container $container
-     *
-     * @return \Spryker\Zed\Kernel\Container
-     */
     protected function addMerchantCategoryFacade(Container $container): Container
     {
         $container->set(static::FACADE_MERCHANT_CATEGORY, function (Container $container) {

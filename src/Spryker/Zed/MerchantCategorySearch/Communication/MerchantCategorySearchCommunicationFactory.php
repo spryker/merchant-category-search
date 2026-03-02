@@ -18,17 +18,11 @@ use Spryker\Zed\MerchantCategorySearch\MerchantCategorySearchDependencyProvider;
  */
 class MerchantCategorySearchCommunicationFactory extends AbstractCommunicationFactory
 {
-    /**
-     * @return \Spryker\Zed\MerchantCategorySearch\Dependency\Facade\MerchantCategorySearchToMerchantCategoryFacadeInterface
-     */
     public function getMerchantCategoryFacade(): MerchantCategorySearchToMerchantCategoryFacadeInterface
     {
         return $this->getProvidedDependency(MerchantCategorySearchDependencyProvider::FACADE_MERCHANT_CATEGORY);
     }
 
-    /**
-     * @return \Spryker\Zed\MerchantCategorySearch\Communication\Expander\MerchantCategorySearchExpanderInterface
-     */
     public function createMerchantCategorySearchExpander(): MerchantCategorySearchExpanderInterface
     {
         return new MerchantCategorySearchExpander(

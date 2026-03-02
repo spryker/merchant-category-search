@@ -12,10 +12,5 @@ use Generated\Shared\Transfer\MerchantCategoryResponseTransfer;
 
 interface MerchantCategorySearchToMerchantCategoryFacadeInterface
 {
-    /**
-     * @param \Generated\Shared\Transfer\MerchantCategoryCriteriaTransfer $merchantCategoryCriteriaTransfer
-     *
-     * @return \Generated\Shared\Transfer\MerchantCategoryResponseTransfer
-     */
     public function get(MerchantCategoryCriteriaTransfer $merchantCategoryCriteriaTransfer): MerchantCategoryResponseTransfer;
 }
